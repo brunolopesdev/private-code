@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Info from "./components/Info";
 import Plans from "./components/Plans";
+import { Reviews } from "./components/Reviews";
 import "./styles/globals.scss";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Info />
       <CourseInfo />
       <Plans />
+      <Reviews />
     </div>
   );
 }

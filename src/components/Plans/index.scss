@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
 
   .plans_container-wrapper {
@@ -105,6 +106,7 @@
 
     .buy-button-dark {
       font-family: $dmsans;
+      font-size: 18px;
       font-weight: 700;
       display: flex;
       align-items: center;
@@ -132,6 +134,7 @@
       border-radius: 6px;
       color: #fff;
       border: none;
+      font-size: 18px;
       cursor: pointer;
     }
 

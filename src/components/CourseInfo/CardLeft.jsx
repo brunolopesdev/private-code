@@ -1,5 +1,3 @@
-import React from "react";
-
 export const CardLeft = ({ title, image, subtitle, text }) => {
   return (
     <div className="course_content">

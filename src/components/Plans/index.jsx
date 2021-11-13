@@ -1,6 +1,7 @@
 import "./index.scss";
 import { BsCheck } from "react-icons/bs";
 import star from "../../assets/star.svg";
+import { Reviews } from "../Reviews";
 
 const Plans = () => {
   const plansData = {
