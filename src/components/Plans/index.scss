@@ -1,0 +1,143 @@
+@import "../../styles/utils.scss";
+
+.plans_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .plans_container-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    padding: 0 4rem;
+    gap: 30px;
+    font-family: $nunito;
+
+    .plan_card-dark {
+      background: $primary;
+      border-radius: 18px;
+      width: 100%;
+      padding: 4rem;
+      position: relative;
+
+      .discount {
+        position: absolute;
+        right: 5%;
+        top: 3%;
+
+        p {
+          position: absolute;
+          top: 30%;
+          right: 20%;
+          font-size: 37px;
+          color: $primary;
+          font-weight: 700;
+          transform: rotate(20deg);
+        }
+
+        span {
+          color: $primary;
+          font-size: 15px;
+          position: absolute;
+          transform: rotate(20deg);
+          top: 35%;
+          right: 25%;
+        }
+      }
+    }
+
+    .plan_card-light {
+      background: #fff;
+      border-radius: 18px;
+      border: 1px solid rgba(32, 30, 84, 0.18);
+      width: 100%;
+      padding: 4rem;
+    }
+
+    .title {
+      color: #3c5882;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .subtitle-light {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 700;
+      padding-bottom: 3rem;
+    }
+
+    .benefits {
+      color: $secondary;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .light_check {
+      color: #fff;
+    }
+
+    .benefits-light {
+      color: #fff;
+      line-height: 2.5;
+      padding-bottom: 3rem;
+    }
+
+    span {
+      color: $secondary;
+      font-size: 20px;
+      font-weight: 700;
+      padding-top: 2rem;
+    }
+
+    .price {
+      color: #fff;
+      font-size: 37px;
+      font-weight: 800;
+      padding-left: 2rem;
+    }
+
+    .dark {
+      color: $primary;
+      padding-bottom: 4rem;
+    }
+
+    .buy-button-dark {
+      font-family: $dmsans;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 199px;
+      height: 60px;
+      background: #252160;
+      box-shadow: -1.16333px 1.16333px 6.98px rgba(0, 0, 0, 0.26);
+      border-radius: 6px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .buy-button {
+      font-family: $dmsans;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 199px;
+      height: 60px;
+      background: linear-gradient(145.09deg, #26e9cf 11.81%, #25cde1 95.89%);
+      box-shadow: -1.16333px 1.16333px 6.98px rgba(0, 0, 0, 0.26);
+      border-radius: 6px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .price_container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

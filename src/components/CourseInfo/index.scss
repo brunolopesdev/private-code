@@ -8,6 +8,8 @@
   background: #f8f8f8;
 
   .course_container-wrapper {
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
