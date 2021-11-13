@@ -1,3 +1,4 @@
+import CourseInfo from "./components/CourseInfo";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Info from "./components/Info";
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Home />
       <Info />
+      <CourseInfo />
     </div>
   );
 }

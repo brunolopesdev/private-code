@@ -1,0 +1,54 @@
+@import "../../styles/utils.scss";
+
+.course_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+
+  .course_container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+
+    .course_content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $nunito;
+
+      .course_image {
+        width: 100%;
+        padding: 2rem;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .course_info {
+        width: 100%;
+
+        .title {
+          color: $secondary;
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        .subtitle {
+          color: $primary;
+          font-size: 45px;
+        }
+
+        .text {
+          color: $gray;
+          font-size: 20px;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+}
