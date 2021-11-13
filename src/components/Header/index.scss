@@ -1,1 +1,67 @@
 @import "../../styles/utils.scss";
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #fff;
+
+  .header_container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 80px;
+    padding: 0 3rem;
+    font-family: $inter;
+
+    .mobile_logo {
+      display: none;
+    }
+
+    .nav_container {
+      display: flex;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 35px;
+
+        li {
+          font-size: 16px;
+          color: $gray;
+          cursor: pointer;
+
+          &:hover {
+            color: $primary;
+            font-weight: 700;
+          }
+        }
+
+        .button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          font-family: $dmsans;
+          font-weight: 700;
+          font-size: 15px;
+          color: #fff;
+          width: 133px;
+          height: 43px;
+          background: $primary;
+          border: 1px solid #ffffff;
+          border-radius: 6px;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

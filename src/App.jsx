@@ -1,9 +1,12 @@
+import Header from "./components/Header";
+import Home from "./components/Home";
 import "./styles/globals.scss";
 
 function App() {
   return (
     <div className="App">
-      <div></div>
+      <Header />
+      <Home />
     </div>
   );
 }
