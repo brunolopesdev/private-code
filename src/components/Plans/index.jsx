@@ -47,11 +47,16 @@ const Plans = () => {
   };
 
   return (
-    <section className="plans_container">
+    <section className="plans_container" id="planos">
+      <h1>NOSSOS PLANOS</h1>
+      <h2>Invista no seu futuro</h2>
       <article className="plans_container-wrapper">
         {plansData.items.map((item, index) => {
           return (
-            <div className={index === 0 ? "plan_card-dark" : "plan_card-light"}>
+            <div
+              className={index === 0 ? "plan_card-dark" : "plan_card-light"}
+              key={item.id}
+            >
               {index === 0 && (
                 <div className="discount">
                   <img src={star} alt="" />
@@ -76,6 +81,7 @@ const Plans = () => {
                         ? "benefits-light"
                         : "benefits-light dark"
                     }
+                    key={benefits.id}
                   >
                     <p className="benefits">vantagens</p>
                     <p>

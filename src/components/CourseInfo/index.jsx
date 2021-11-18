@@ -31,6 +31,7 @@ const CourseInfo = () => {
           if (index % 3 === 0) {
             return (
               <CardLeft
+                key={item.id}
                 title={item.title}
                 image={item.image}
                 subtitle={item.subtitle}
@@ -40,6 +41,7 @@ const CourseInfo = () => {
           } else {
             return (
               <CardRight
+                key={item.id}
                 title={item.title}
                 image={item.image}
                 subtitle={item.subtitle}

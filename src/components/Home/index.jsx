@@ -7,7 +7,7 @@ const Home = () => {
     home: {
       title: "Seja aprovado no Enem e Vestibulares :)",
       titleImg: robotHead,
-      subtitle: "o que aprender",
+      subtitle: "Você escolhe o que aprender",
       text: "Aqui você terá toda assistência que precisa com materiais desenvolvido por",
       strong: "mestres e doutores em matemática",
       buttonText: "Veja nossos planos",
@@ -15,7 +15,7 @@ const Home = () => {
     },
   };
   return (
-    <section className="home_section">
+    <section className="home_section" id="home">
       <article className="home_section-wrapper">
         <div className="home_left-content">
           <img src="" alt="" />

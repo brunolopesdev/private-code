@@ -7,17 +7,43 @@
   justify-content: center;
   width: 100%;
 
+  .info_brands-content {
+    img {
+      width: 100%;
+    }
+  }
+
   .info_container-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
 
     .info_content-left {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding: 6rem 4rem;
+
+      @media screen and (max-width: 768px) {
+        padding: 6rem 1rem;
+      }
 
       .left_content-wrapper {
         display: flex;
         gap: 30px;
+
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 3rem;
+        }
 
         .left-image {
           display: flex;
@@ -80,6 +106,10 @@
       img {
         width: 691px;
         height: 738px;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
       }
     }
   }

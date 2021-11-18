@@ -17,14 +17,82 @@
     padding: 0 3rem;
     font-family: $inter;
 
+    .desktop_logo {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
     .mobile_logo {
       display: none;
+
+      @media screen and (max-width: 768px) {
+        display: inline-block;
+      }
     }
 
     .nav_container {
       display: flex;
 
-      ul {
+      .mobile_menu {
+        color: $primary;
+        font-size: 25px;
+        display: none;
+
+        @media screen and (max-width: 768px) {
+          display: inline-block;
+        }
+      }
+
+      .nav_wrapper-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 98vw;
+        height: 90vh;
+        position: absolute;
+        background: $gray;
+        list-style: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 1.75rem;
+        font-weight: 700;
+        border-radius: 6px;
+
+        li {
+          font-size: 16px;
+          color: #fff;
+          cursor: pointer;
+
+          &:hover {
+            color: $primary;
+            font-weight: 700;
+          }
+        }
+
+        .button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          font-family: $dmsans;
+          font-weight: 700;
+          font-size: 15px;
+          color: #fff;
+          width: 133px;
+          height: 43px;
+          background: $primary;
+          border-radius: 6px;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+
+      .nav_wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,6 +128,9 @@
           &:hover {
             color: #fff;
           }
+        }
+        @media screen and (max-width: 768px) {
+          display: none;
         }
       }
     }

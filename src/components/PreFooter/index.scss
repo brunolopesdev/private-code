@@ -1,0 +1,106 @@
+@import "../../styles/utils.scss";
+
+.prefooter_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .prefooter_container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1440px;
+    background: $primary;
+    height: 672px;
+    padding: 0 7rem;
+    gap: 6rem;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column-reverse;
+      height: 100%;
+      padding-top: 5rem;
+    }
+
+    .prefooter_image {
+      margin-bottom: 5rem;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+
+        img {
+          width: 290.77px;
+        }
+      }
+    }
+
+    .prefooter_text {
+      font-family: $inter;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      @media screen and (max-width: 1024px) {
+        align-items: center;
+        padding-top: 1rem;
+        text-align: center;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        color: $secondary;
+        font-size: 20px;
+        padding-bottom: 2rem;
+
+        img {
+          padding-right: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+
+      .text {
+        font-size: 20px;
+        color: #fff;
+        padding-bottom: 2rem;
+
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+
+      .prefooter_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $dmsans;
+        font-size: 17px;
+        width: 380.41px;
+        height: 59.33px;
+        background: $secondary;
+        border: none;
+        border-radius: 6px;
+        color: $primary;
+        font-weight: 700;
+        cursor: pointer;
+
+        .right-arrow {
+          margin-left: 2rem;
+          font-weight: 700;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 294px;
+          height: 45.85px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

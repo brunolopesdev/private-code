@@ -16,11 +16,22 @@
     align-items: center;
     padding: 0 10rem;
 
+    @media screen and (max-width: 768px) {
+      padding: 0 4rem;
+
+      gap: 2rem;
+    }
+
     .course_content {
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: $nunito;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+      }
 
       .course_image {
         width: 100%;
@@ -38,17 +49,31 @@
           color: $secondary;
           font-size: 22px;
           font-weight: 700;
+
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+          }
         }
 
         .subtitle {
           color: $primary;
           font-size: 45px;
+
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+            text-align: center;
+          }
         }
 
         .text {
           color: $gray;
           font-size: 20px;
           padding-top: 0.5rem;
+
+          @media screen and (max-width: 768px) {
+            font-size: 12px;
+            text-align: center;
+          }
         }
       }
     }

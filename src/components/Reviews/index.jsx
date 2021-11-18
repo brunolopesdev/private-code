@@ -73,6 +73,16 @@ export const Reviews = () => {
     slidesToScroll: 1,
     nextArrow: <BiChevronRightCircle />,
     prevArrow: <BiChevronLeftCircle />,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+    ],
   };
 
   return (

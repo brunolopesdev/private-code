@@ -36,7 +36,7 @@ const Info = () => {
   };
 
   return (
-    <section className="info_container">
+    <section className="info_container" id="quemSomos">
       <div className="info_brands-content">
         <img src={infoData.info.brandImg} alt="Marcas Parceiras" />
       </div>
@@ -44,7 +44,7 @@ const Info = () => {
         <div className="info_content-left">
           {infoData.info.items.map((item) => {
             return (
-              <div className="left_content-wrapper">
+              <div className="left_content-wrapper" key={item.id}>
                 <div className="left-image">
                   <img src={item.image} alt={item.title} />
                 </div>
